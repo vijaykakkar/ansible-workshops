@@ -1,4 +1,10 @@
 ---
+- name: RAISE AN INCIDENT IF NO BANNER
+  hosts: cs01
+  gather_facts: false
+
+  tasks:
+
     - name: GATHER THE CURRENT BANNER ON THE DEVICE
       ios_command:
         commands:
